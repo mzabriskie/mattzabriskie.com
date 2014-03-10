@@ -190,6 +190,13 @@
 				button.className = button.className === 'active' ? '' : 'active';
 				menu.className = menu.className === 'slide' ? '' : 'slide';
 			};
+
+			menu.onclick = function (e) {
+				var target = e.target || e.srcElement;
+				if ('A' === target.nodeName && menu.className.indexOf('slide') > -1) {
+					menu.className = '';
+				}
+			};
 		})();
 	</script>
 </body>
