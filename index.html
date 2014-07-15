@@ -25,32 +25,7 @@
         <a name="projects"></a>
         <section>
             <h2>Projects</h2>
-            <dl>
-				<dt>
-					<a href="https://github.com/mzabriskie/sickle" target="_blank">sickle</a>
-					<iframe src="http://ghbtns.com/github-btn.html?user=mzabriskie&amp;repo=sickle&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="75" height="20" class="right"></iframe>
-					<iframe src="http://ghbtns.com/github-btn.html?user=mzabriskie&amp;repo=sickle&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="75" height="20" class="right"></iframe>
-				</dt>
-				<dd>Improves MooTools' performance by using Sizzle instead of Slick</dd>
-                <dt>
-					<a href="https://github.com/mzabriskie/regexp-viz" target="_blank">regexp-viz</a>
-					<iframe src="http://ghbtns.com/github-btn.html?user=mzabriskie&amp;repo=regexp-viz&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="75" height="20" class="right"></iframe>
-					<iframe src="http://ghbtns.com/github-btn.html?user=mzabriskie&amp;repo=regexp-viz&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="75" height="20" class="right"></iframe>
-				</dt>
-				<dd>RegExp visualizer for JavaScript</dd>
-                <dt>
-					<a href="https://github.com/mzabriskie/cubiq" target="_blank">cubiq</a>
-					<iframe src="http://ghbtns.com/github-btn.html?user=mzabriskie&amp;repo=cubiq&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="75" height="20" class="right"></iframe>
-					<iframe src="http://ghbtns.com/github-btn.html?user=mzabriskie&amp;repo=cubiq&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="75" height="20" class="right"></iframe>
-				</dt>
-                <dd>JavaScript image gallery</dd>
-                <dt>
-					<a href="https://github.com/mzabriskie/phyllis" target="_blank">phyllis</a>
-					<iframe src="http://ghbtns.com/github-btn.html?user=mzabriskie&amp;repo=phyllis&amp;type=fork&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="75" height="20" class="right"></iframe>
-					<iframe src="http://ghbtns.com/github-btn.html?user=mzabriskie&amp;repo=phyllis&amp;type=watch&amp;count=true" allowtransparency="true" frameborder="0" scrolling="0" width="75" height="20" class="right"></iframe>
-				</dt>
-                <dd>Unit Testing for PHP</dd>
-            </dl>
+            <dl></dl>
 			<a href="http://github.com/mzabriskie" target="_blank">View more on GitHub →</a>
         </section>
         <a name="resume"></a>
@@ -181,23 +156,7 @@
         </section>
     </div>
 
-	<script type="text/javascript">
-		(function () {
-			var button = document.querySelector('header button'),
-				menu = document.querySelector('header ul');
-
-			button.onclick = function () {
-				button.className = button.className === 'active' ? '' : 'active';
-				menu.className = menu.className === 'slide' ? '' : 'slide';
-			};
-
-			menu.onclick = function (e) {
-				var target = e.target || e.srcElement;
-				if ('A' === target.nodeName && menu.className.indexOf('slide') > -1) {
-					menu.className = '';
-				}
-			};
-		})();
-	</script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript">app.init();</script>
 </body>
 </html>
