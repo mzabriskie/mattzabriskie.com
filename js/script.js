@@ -32,7 +32,7 @@ var app = (function () {
 	}
 
 	function initProjects() {
-		xhr('https://api.github.com/users/mzabriskie/repos', null, function (response) {
+		xhr('https://api.github.com/users/mzabriskie/repos?per_page=200', null, function (response) {
 			// Parse response
 			var repos = JSON.parse(response);
 
@@ -73,7 +73,7 @@ var app = (function () {
 				fork.setAttribute('allowtransparency', 'true');
 				fork.setAttribute('frameborder', '0');
 				fork.setAttribute('scrolling', '0');
-				fork.setAttribute('width', '75');
+				fork.setAttribute('width', '100');
 				fork.setAttribute('height', '20');
 				fork.setAttribute('class', 'right');
 
@@ -81,7 +81,7 @@ var app = (function () {
 				watch.setAttribute('allowtransparency', 'true');
 				watch.setAttribute('frameborder', '0');
 				watch.setAttribute('scrolling', '0');
-				watch.setAttribute('width', '75');
+				watch.setAttribute('width', '100');
 				watch.setAttribute('height', '20');
 				watch.setAttribute('class', 'right');
 			}
